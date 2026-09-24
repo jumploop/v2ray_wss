@@ -119,7 +119,7 @@ tgsbshow() {
 	echo '#!/bin/bash
 export LANG=en_US.UTF-8
 
-m1=$(cat ~/_v2ray_vmess_url_ 2>/dev/null)
+m1=$(head -n 1 ~/_v2ray_vmess_url_ 2>/dev/null)
 message_text_m1=$(echo "$m1")
 MODE=HTML
 URL="https://api.telegram.org/bottelegram_token/sendMessage"
